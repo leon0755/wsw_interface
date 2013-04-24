@@ -1,0 +1,61 @@
+#5'
+#2'#30'mtrsl|idBMX|pi1|si|s01|s103/06/2007|s215:08|s303/06/2007|s415:08|ci70108015|c01|#30'ct1|cnID and SUSC|c3P|c4Preliminary|ta|rtgpi|rnGram Positive Identification|rr3|#30't2ID|t3Identification|t4F|t5Final|t10|o1stahyi|o2Staphylococcus hyicus|o37750303#30'0041|o4mod6|o53+|zz|#29'54
+#3'#4'
+#5'
+#2'#30'mtrsl|idBMX|pi1|si|s01|s103/06/2007|s215:08|s303/06/2007|s415:08|ci70108015|c01|#30'ct1|cnID and SUSC|c3P|c4Preliminary|ta|rtgps-110|rnGram Positive General Suscept#30'ibility 110|rr1|t2SU|t3Susceptibility|t4F|t5Final|t10|o1stahyi|o2Staphylococcus #30'hyicus|o4mod6|o53+|ra|a1ams|a2Ampicillin/sulbactam|a3>=32|a4R|ra|a1beta|a2Beta l#30'actamase|a3POS|a4+|ra|a1cz|a2Cefazolin|a3>=32|a4R|ra|a1cc|a2Clindamycin|a3>=8|a4#30'R|ra|a1e|a2Erythromycin|a3>=8|a4R|ra|a1gm|a2Gentamicin|a3>=16|a4R|ra|a1fd|a2Nitr#30'ofurantoin|a3<=32|a4S|ra|a1ox|a2Oxacillin MIC|a3>=8|a4R|ra|a1peng|a2Penicillin-G#30'|a3>=16|a4R|ra|a1rif|a2Rifampin|a3<=1|a4S|ra|a1tet|a2Tetracycline|a32|a4S|ra|a1s#30'xt|a2Trimethoprim/Sulfa|a3>=320|a4R|ra|a1va|a2Vancomycin|a32|a4S|ra|a1lev|a2Levo#30'floxacin|a3>=8|a4R|ra|a1lnz|a2Linezolid|a3<=2|a4S|ra|a1mxf|a2Moxifloxacin|a32|a4#30'I|zz|#29'76
+#3'#4'
+#5'
+#2'#30'mtrsl|idBMX|pi1|si|s01|s103/06/2007|s215:08|s303/06/2007|s415:08|ci70108015|c01|#30'ct1|cnID and SUSC|c3P|c4Preliminary|ta|rtgni+|rnGram Negative Identification|rr4#30'|t2ID|t3Identification|t4F|t5Final|t11|o1acicbm|o2Acinetobacter calcoaceticus-ba#30'umannii complex|o360444000001|o4mod6|o53+|zz|#29'38
+#3'#4'
+#5'
+#2'#30'mtrsl|idBMX|pi1|si|s01|s103/06/2007|s215:08|s303/06/2007|s415:08|ci70108015|c01|#30'ct1|cnID and SUSC|c3P|c4Preliminary|ta|rtgns-143|rnGram Negative General Suscept#30'ibility 143|rr2|t2SU|t3Susceptibility|t4F|t5Final|t11|o1acicbm|o2Acinetobacter c#30'alcoaceticus-baumannii complex|o4mod6|o53+|ra|a1am|a2Ampicillin|a3>=32|a4R|ra|a1#30'ams|a2Ampicillin/sulbactam|a3>=32|a4R|ra|a1azm|a2Aztreonam|a3>=32|a4R|ra|a1cz|a2#30'Cefazolin|a3>=32|a4R|ra|a1fep|a2Cefepime|a3>=32|a4R|ra|a1taz|a2Ceftazidime|a3>=3#30'2|a4R|ra|a1ctr|a2Ceftriaxone|a3>=64|a4R|ra|a1cip|a2Ciprofloxacin|a3>=4|a4R|ra|a1#30'gm|a2Gentamicin|a3>=16|a4R|ra|a1imi|a2Imipenem|a3>=16|a4R|ra|a1fd|a2Nitrofuranto#30'in|a3>=128|a4R|ra|a1tzp|a2Piperacillin/tazobactam|a3>=128|a4R|ra|a1tob|a2Tobramy#30'cin|a3>=16|a4R|ra|a1sxt|a2Trimethoprim/Sulfa|a3>=320|a4R|ra|a1lev|a2Levofloxacin#30'|a34|a4R|zz|#29'e3
+#3'#4'
+
+
+上面数据是标本号为70108015，第一个为第一种细菌(分离号为0)的鉴定结果，第二个为第一种细菌(分离号为0)的药敏结果，第三个为第二种细菌(分离号为1)的鉴定结果，第四个为第二种细菌(分离号为1)的药敏结果。
+
+#5'#2'#30'#3'#4'为系统传送标志，无意义
+
+mtrsl|idBMX可作为起始标志
+
+pi后面为病人病历号(住院门诊号)
+
+ci后面为标本号
+
+t2ID表示该结果为鉴定结果
+
+t2SU表示该结果为药敏结果
+
+t1后面为标本的分离号，即同一个标本有两个或两个以上的细菌时后面用0、1、2等数字区别
+
+o1后面为细菌的代码
+
+o2后面为细菌名称
+
+o3后面为细菌的生化编码
+
+a1后面为抗生素代码
+
+a2后面为抗生素全称
+
+a3后面为抗生素的MIC值，可能为数字或字符如POS
+
+a4后面为抗生素的敏感耐药结果，可能为S I R，也可能为+ -等
+
+zz后面为结束标志
+
+ 
+
+ 
+
+建议：
+
+1、  抗生素的MIC值与敏感耐药结果设为字符型
+
+2、  重复数据的判断标准为标本号与分离号都相同即ci与t1后面的数字完全相同，当接收重复数据时，将最后一次传送的数据替换前一次传送的数据，己审核的标本不能替换。
+
+3、  做接口时可考虑：将接收过来的数据放在一个单独的数据库文件中，根据标本号，若接收数据的标本号与LIS软件中的标本号相同，则自动将结果导入LIS软件的结果数据库，若标本号不相同，则数据仍保存在单独的那个数据库文件中，供LIS软件提取。如接收到的标本号为70108015，LIS软件中的标本号也为70108015，则接收的结果导入到LIS软件，若LIS软件中的标本号为70101012，可以人为地将接收的标本号为70108015的结果导入LIS软件中的标本号为70101012的结果中。
+
+4、  在LIS报告软件中加入一个复制功能，即 将近期内报告过的结果赋值给一个新的标本
+
+5、  统计功能中加入细菌组的概念，如将鲍曼不动杆菌、醋酸钙鲍曼复合不动杆菌、醋酸钙不动杆菌无硝生物型等细菌可以做为同一种细菌进行统计。

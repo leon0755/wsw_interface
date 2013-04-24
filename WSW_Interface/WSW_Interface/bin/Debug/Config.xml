@@ -9,4 +9,7 @@
     <Handshake>None</Handshake>
     <ReadBufferSize>2000</ReadBufferSize>
   </RS232>
+  <TestGroup>WSW</TestGroup>
+  <InstrumentNo>79</InstrumentNo>
+  <Operator>admin</Operator>
 </ConfigInfo>

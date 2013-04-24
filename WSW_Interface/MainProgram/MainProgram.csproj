@@ -34,7 +34,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DecodeProcess.cs" />
     <Compile Include="Deocde\DecodeWSW.cs" />
     <Compile Include="RS232Controller\EventArgs_Data.cs" />
     <Compile Include="Enum_State.cs" />

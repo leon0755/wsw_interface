@@ -84,6 +84,30 @@ namespace Palgain.CommonModule
 
         #endregion
 
+        private string m_testgroup = "";
+
+        public string TestGroup
+        {
+            get { return m_testgroup; }
+            set { m_testgroup = value; }
+        }
+
+        private string m_instrumentno = "";
+
+        public string InstrumentNo
+        {
+            get { return m_instrumentno; }
+            set { m_instrumentno = value; }
+        }
+
+        private string m_operator = "";
+
+        public string Operator
+        {
+            get { return m_operator; }
+            set { m_operator = value; }
+        }
+
         #region 序列化与反序列化
         public static void Save(ConfigInfo i_configinfo)
         {

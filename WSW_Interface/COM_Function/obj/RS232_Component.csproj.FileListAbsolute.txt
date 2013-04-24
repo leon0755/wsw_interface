@@ -14,3 +14,11 @@ D:\Soft\省人民WSW联机\WSW_Interface\COM_Function\bin\Debug\CommonModule.pdb
 D:\Soft\省人民WSW联机\WSW_Interface\COM_Function\obj\Debug\ResolveAssemblyReference.cache
 D:\Soft\省人民WSW联机\WSW_Interface\COM_Function\obj\Debug\RS232_Component.dll
 D:\Soft\省人民WSW联机\WSW_Interface\COM_Function\obj\Debug\RS232_Component.pdb
+D:\Soft\wsw_interface\WSW_Interface\COM_Function\bin\Debug\RS232_Component.dll
+D:\Soft\wsw_interface\WSW_Interface\COM_Function\bin\Debug\RS232_Component.pdb
+D:\Soft\wsw_interface\WSW_Interface\COM_Function\bin\Debug\CommonModule.dll
+D:\Soft\wsw_interface\WSW_Interface\COM_Function\bin\Debug\NLog.dll
+D:\Soft\wsw_interface\WSW_Interface\COM_Function\bin\Debug\CommonModule.pdb
+D:\Soft\wsw_interface\WSW_Interface\COM_Function\obj\Debug\ResolveAssemblyReference.cache
+D:\Soft\wsw_interface\WSW_Interface\COM_Function\obj\Debug\RS232_Component.dll
+D:\Soft\wsw_interface\WSW_Interface\COM_Function\obj\Debug\RS232_Component.pdb

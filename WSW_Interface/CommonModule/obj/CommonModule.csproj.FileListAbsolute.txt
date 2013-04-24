@@ -12,3 +12,9 @@ D:\Soft\省人民WSW联机\WSW_Interface\CommonModule\bin\Debug\NLog.dll
 D:\Soft\省人民WSW联机\WSW_Interface\CommonModule\obj\Debug\ResolveAssemblyReference.cache
 D:\Soft\省人民WSW联机\WSW_Interface\CommonModule\obj\Debug\CommonModule.dll
 D:\Soft\省人民WSW联机\WSW_Interface\CommonModule\obj\Debug\CommonModule.pdb
+D:\Soft\wsw_interface\WSW_Interface\CommonModule\bin\Debug\CommonModule.dll
+D:\Soft\wsw_interface\WSW_Interface\CommonModule\bin\Debug\CommonModule.pdb
+D:\Soft\wsw_interface\WSW_Interface\CommonModule\bin\Debug\NLog.dll
+D:\Soft\wsw_interface\WSW_Interface\CommonModule\obj\Debug\ResolveAssemblyReference.cache
+D:\Soft\wsw_interface\WSW_Interface\CommonModule\obj\Debug\CommonModule.dll
+D:\Soft\wsw_interface\WSW_Interface\CommonModule\obj\Debug\CommonModule.pdb

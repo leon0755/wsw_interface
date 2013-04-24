@@ -18,3 +18,13 @@ D:\Soft\省人民WSW联机\WSW_Interface\MainProgram\bin\Debug\CommonModule.pdb
 D:\Soft\省人民WSW联机\WSW_Interface\MainProgram\obj\Debug\ResolveAssemblyReference.cache
 D:\Soft\省人民WSW联机\WSW_Interface\MainProgram\obj\Debug\MainProgram.dll
 D:\Soft\省人民WSW联机\WSW_Interface\MainProgram\obj\Debug\MainProgram.pdb
+D:\Soft\wsw_interface\WSW_Interface\MainProgram\bin\Debug\MainProgram.dll
+D:\Soft\wsw_interface\WSW_Interface\MainProgram\bin\Debug\MainProgram.pdb
+D:\Soft\wsw_interface\WSW_Interface\MainProgram\bin\Debug\CommonModule.dll
+D:\Soft\wsw_interface\WSW_Interface\MainProgram\bin\Debug\RS232_Component.dll
+D:\Soft\wsw_interface\WSW_Interface\MainProgram\bin\Debug\NLog.dll
+D:\Soft\wsw_interface\WSW_Interface\MainProgram\bin\Debug\RS232_Component.pdb
+D:\Soft\wsw_interface\WSW_Interface\MainProgram\bin\Debug\CommonModule.pdb
+D:\Soft\wsw_interface\WSW_Interface\MainProgram\obj\Debug\ResolveAssemblyReference.cache
+D:\Soft\wsw_interface\WSW_Interface\MainProgram\obj\Debug\MainProgram.dll
+D:\Soft\wsw_interface\WSW_Interface\MainProgram\obj\Debug\MainProgram.pdb

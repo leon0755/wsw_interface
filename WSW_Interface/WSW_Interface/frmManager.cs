@@ -136,6 +136,10 @@ namespace WSW_Interface
             cb_parity.SelectedItem = Consts.Config.Rs232ConfigInfo.Parity.ToString();
             cb_databits.SelectedItem = Consts.Config.Rs232ConfigInfo.Databits;
             cb_stopbits.SelectedItem = Consts.Config.Rs232ConfigInfo.Stopbits.ToString();
+
+            txt_inputer.Text = Consts.Config.Operator;
+            txt_instrno.Text = Consts.Config.InstrumentNo;
+            txt_testgroup.Text = Consts.Config.TestGroup;
         }
 
         private void SetState()
@@ -178,6 +182,10 @@ namespace WSW_Interface
                 t_configinfo.Rs232ConfigInfo.Databits = int.Parse((string)cb_databits.SelectedItem.ToString());
                 t_configinfo.Rs232ConfigInfo.Stopbits =
                     (StopBits)Enum.Parse(typeof(StopBits), (string)cb_stopbits.SelectedItem.ToString());
+
+                t_configinfo.InstrumentNo = txt_instrno.Text.Trim();
+                t_configinfo.Operator = txt_inputer.Text.Trim();
+                t_configinfo.TestGroup = txt_testgroup.Text.Trim();
             }
             catch (Exception ex)
             {

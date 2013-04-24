@@ -58,7 +58,6 @@ namespace Palgain.MainProgram
             try
             {
                 m_decode.Decode(e.Data);
-                
             }
             catch (Exception ex)
             {

@@ -43,8 +43,16 @@
             this.cb_portname = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.txt_instrno = new System.Windows.Forms.TextBox();
+            this.txt_testgroup = new System.Windows.Forms.TextBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.txt_inputer = new System.Windows.Forms.TextBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox1
@@ -60,8 +68,8 @@
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.btn_save);
             this.panel1.Controls.Add(this.cb_stopbits);
+            this.panel1.Controls.Add(this.btn_save);
             this.panel1.Controls.Add(this.label5);
             this.panel1.Controls.Add(this.cb_databits);
             this.panel1.Controls.Add(this.label4);
@@ -183,11 +191,74 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.txt_inputer);
+            this.panel2.Controls.Add(this.label8);
+            this.panel2.Controls.Add(this.txt_testgroup);
+            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.txt_instrno);
+            this.panel2.Controls.Add(this.label6);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel2.Location = new System.Drawing.Point(0, 114);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(519, 55);
+            this.panel2.TabIndex = 11;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(12, 19);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(59, 12);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "仪器编号:";
+            // 
+            // txt_instrno
+            // 
+            this.txt_instrno.Location = new System.Drawing.Point(77, 16);
+            this.txt_instrno.Name = "txt_instrno";
+            this.txt_instrno.Size = new System.Drawing.Size(79, 21);
+            this.txt_instrno.TabIndex = 2;
+            // 
+            // txt_testgroup
+            // 
+            this.txt_testgroup.Location = new System.Drawing.Point(230, 16);
+            this.txt_testgroup.Name = "txt_testgroup";
+            this.txt_testgroup.Size = new System.Drawing.Size(100, 21);
+            this.txt_testgroup.TabIndex = 4;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(177, 19);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(47, 12);
+            this.label7.TabIndex = 3;
+            this.label7.Text = "检验组:";
+            // 
+            // txt_inputer
+            // 
+            this.txt_inputer.Location = new System.Drawing.Point(397, 16);
+            this.txt_inputer.Name = "txt_inputer";
+            this.txt_inputer.Size = new System.Drawing.Size(100, 21);
+            this.txt_inputer.TabIndex = 6;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(344, 19);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(47, 12);
+            this.label8.TabIndex = 5;
+            this.label8.Text = "检验者:";
+            // 
             // frmManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(519, 237);
+            this.Controls.Add(this.panel2);
             this.Controls.Add(this.groupBox1);
             this.MaximizeBox = false;
             this.Name = "frmManager";
@@ -200,6 +271,8 @@
             this.groupBox1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -220,6 +293,13 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btn_save;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox txt_testgroup;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox txt_instrno;
+        private System.Windows.Forms.TextBox txt_inputer;
+        private System.Windows.Forms.Label label8;
     }
 }
 
