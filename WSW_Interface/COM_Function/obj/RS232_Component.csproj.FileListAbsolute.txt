@@ -1,0 +1,16 @@
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\bin\Debug\RS232_Component.dll
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\bin\Debug\RS232_Component.pdb
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\bin\Debug\CommonModule.dll
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\bin\Debug\NLog.dll
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\bin\Debug\CommonModule.pdb
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\obj\Debug\ResolveAssemblyReference.cache
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\obj\Debug\RS232_Component.dll
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\obj\Debug\RS232_Component.pdb
+D:\Soft\省人民WSW联机\WSW_Interface\COM_Function\bin\Debug\RS232_Component.dll
+D:\Soft\省人民WSW联机\WSW_Interface\COM_Function\bin\Debug\RS232_Component.pdb
+D:\Soft\省人民WSW联机\WSW_Interface\COM_Function\bin\Debug\CommonModule.dll
+D:\Soft\省人民WSW联机\WSW_Interface\COM_Function\bin\Debug\NLog.dll
+D:\Soft\省人民WSW联机\WSW_Interface\COM_Function\bin\Debug\CommonModule.pdb
+D:\Soft\省人民WSW联机\WSW_Interface\COM_Function\obj\Debug\ResolveAssemblyReference.cache
+D:\Soft\省人民WSW联机\WSW_Interface\COM_Function\obj\Debug\RS232_Component.dll
+D:\Soft\省人民WSW联机\WSW_Interface\COM_Function\obj\Debug\RS232_Component.pdb

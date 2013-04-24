@@ -1,0 +1,14 @@
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\WSW_Interface\bin\Debug\CommonModule.dll
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\WSW_Interface\bin\Debug\CommonModule.pdb
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\CommonModule\bin\Debug\CommonModule.dll
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\CommonModule\bin\Debug\CommonModule.pdb
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\CommonModule\obj\Debug\ResolveAssemblyReference.cache
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\CommonModule\obj\Debug\CommonModule.dll
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\CommonModule\obj\Debug\CommonModule.pdb
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\CommonModule\bin\Debug\NLog.dll
+D:\Soft\省人民WSW联机\WSW_Interface\CommonModule\bin\Debug\CommonModule.dll
+D:\Soft\省人民WSW联机\WSW_Interface\CommonModule\bin\Debug\CommonModule.pdb
+D:\Soft\省人民WSW联机\WSW_Interface\CommonModule\bin\Debug\NLog.dll
+D:\Soft\省人民WSW联机\WSW_Interface\CommonModule\obj\Debug\ResolveAssemblyReference.cache
+D:\Soft\省人民WSW联机\WSW_Interface\CommonModule\obj\Debug\CommonModule.dll
+D:\Soft\省人民WSW联机\WSW_Interface\CommonModule\obj\Debug\CommonModule.pdb

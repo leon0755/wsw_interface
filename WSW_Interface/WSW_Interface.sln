@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 9.00
+# Visual Studio 2005
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WSW_Interface", "WSW_Interface\WSW_Interface.csproj", "{0278E472-56EF-4956-BDB6-533776717B2E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RS232_Component", "COM_Function\RS232_Component.csproj", "{26B96CCB-6675-451C-99A7-DF565A8DB497}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CommonModule", "CommonModule\CommonModule.csproj", "{6BEB6289-A7ED-46A7-A742-E680E6C1BC08}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MainProgram", "MainProgram\MainProgram.csproj", "{C4DE4370-5A01-4DEF-9A00-4D52F76870AF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0278E472-56EF-4956-BDB6-533776717B2E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0278E472-56EF-4956-BDB6-533776717B2E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0278E472-56EF-4956-BDB6-533776717B2E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0278E472-56EF-4956-BDB6-533776717B2E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B96CCB-6675-451C-99A7-DF565A8DB497}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B96CCB-6675-451C-99A7-DF565A8DB497}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B96CCB-6675-451C-99A7-DF565A8DB497}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B96CCB-6675-451C-99A7-DF565A8DB497}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6BEB6289-A7ED-46A7-A742-E680E6C1BC08}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6BEB6289-A7ED-46A7-A742-E680E6C1BC08}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6BEB6289-A7ED-46A7-A742-E680E6C1BC08}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6BEB6289-A7ED-46A7-A742-E680E6C1BC08}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4DE4370-5A01-4DEF-9A00-4D52F76870AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4DE4370-5A01-4DEF-9A00-4D52F76870AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4DE4370-5A01-4DEF-9A00-4D52F76870AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4DE4370-5A01-4DEF-9A00-4D52F76870AF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

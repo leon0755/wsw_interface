@@ -1,0 +1,10 @@
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\WSW_Interface\bin\Debug\COM_Function.dll
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\WSW_Interface\bin\Debug\COM_Function.pdb
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\bin\Debug\COM_Function.dll
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\bin\Debug\COM_Function.pdb
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\bin\Debug\CommonModule.dll
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\bin\Debug\NLog.dll
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\bin\Debug\CommonModule.pdb
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\obj\Debug\ResolveAssemblyReference.cache
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\obj\Debug\COM_Function.dll
+F:\Sysmex\work\Laboman.net相关\江苏省人民医院\省人民WSW\WSW_Interface\COM_Function\obj\Debug\COM_Function.pdb
