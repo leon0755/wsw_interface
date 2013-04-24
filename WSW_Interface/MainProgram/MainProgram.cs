@@ -12,7 +12,7 @@ namespace Palgain.MainProgram
         private Enum_State m_state = Enum_State.Ready;
         private DecodeWSW m_decode = new DecodeWSW();
 
-        public Enum_State State
+        public Enum_State State 
         {
             get { return m_state; }
             set { m_state = value; }
@@ -95,7 +95,7 @@ namespace Palgain.MainProgram
                 m_rs232.Dispose();
                 m_rs232 = null;
             }
-            m_rs232 = new RS232Controller();
+            StartListenCOM( );
             #endregion
         }
 

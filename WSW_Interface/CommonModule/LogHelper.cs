@@ -22,7 +22,7 @@ namespace Palgain.CommonModule
         }
 
         public static void Info(LogType i_logtype, string i_data)
-        {
+        { 
             Logger t_log = null;
             switch (i_logtype)
             {
@@ -32,6 +32,10 @@ namespace Palgain.CommonModule
                 default:
                     t_log = g_log;
                     break;
+            }
+            if (i_logtype != LogType.Normal)
+            {
+                Info( i_data );
             }
             t_log.Info(i_data);
         }

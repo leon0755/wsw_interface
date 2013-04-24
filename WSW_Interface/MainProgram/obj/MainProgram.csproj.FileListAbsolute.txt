@@ -28,3 +28,13 @@ D:\Soft\wsw_interface\WSW_Interface\MainProgram\bin\Debug\CommonModule.pdb
 D:\Soft\wsw_interface\WSW_Interface\MainProgram\obj\Debug\ResolveAssemblyReference.cache
 D:\Soft\wsw_interface\WSW_Interface\MainProgram\obj\Debug\MainProgram.dll
 D:\Soft\wsw_interface\WSW_Interface\MainProgram\obj\Debug\MainProgram.pdb
+D:\我的文档\GitHub\wsw_interface\WSW_Interface\MainProgram\bin\Debug\MainProgram.dll
+D:\我的文档\GitHub\wsw_interface\WSW_Interface\MainProgram\bin\Debug\MainProgram.pdb
+D:\我的文档\GitHub\wsw_interface\WSW_Interface\MainProgram\bin\Debug\CommonModule.dll
+D:\我的文档\GitHub\wsw_interface\WSW_Interface\MainProgram\bin\Debug\RS232_Component.dll
+D:\我的文档\GitHub\wsw_interface\WSW_Interface\MainProgram\bin\Debug\NLog.dll
+D:\我的文档\GitHub\wsw_interface\WSW_Interface\MainProgram\bin\Debug\RS232_Component.pdb
+D:\我的文档\GitHub\wsw_interface\WSW_Interface\MainProgram\bin\Debug\CommonModule.pdb
+D:\我的文档\GitHub\wsw_interface\WSW_Interface\MainProgram\obj\Debug\ResolveAssemblyReference.cache
+D:\我的文档\GitHub\wsw_interface\WSW_Interface\MainProgram\obj\Debug\MainProgram.dll
+D:\我的文档\GitHub\wsw_interface\WSW_Interface\MainProgram\obj\Debug\MainProgram.pdb
