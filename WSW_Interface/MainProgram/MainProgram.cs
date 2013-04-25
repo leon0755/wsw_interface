@@ -22,6 +22,10 @@ namespace Palgain.MainProgram
         public MainProgram()
         {
             Consts.Config = this.LoadConfig();
+            Consts.g_exe_folder = 
+                System.IO.Path.GetDirectoryName( 
+                System.Reflection.Assembly.GetExecutingAssembly( ).Location );
+
             SaveProcess.Instance.Start( );
         }
 

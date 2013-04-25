@@ -6,7 +6,8 @@ namespace Palgain.CommonModule
 {
     public class Consts
     {
-        public const string c_config_file = @"Config.xml";
+        public static string g_config_file = @"Config.xml";
+        public static string g_exe_folder = "";
 
         private static ConfigInfo m_config_info = new ConfigInfo();
 

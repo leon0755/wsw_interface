@@ -123,20 +123,27 @@ namespace Palgain.CommonModule
         #region 序列化与反序列化
         public static void Save(ConfigInfo i_configinfo)
         {
-            using (FileStream t_filestream = new FileStream(Consts.c_config_file, FileMode.Create, FileAccess.Write, FileShare.None))
+            string t_filepath = "";
+
+            string t_path = System.IO.Directory.GetCurrentDirectory( );
+            System.IO.Directory.SetCurrentDirectory( Consts.g_exe_folder );
+            t_filepath = Path.Combine( Consts.g_exe_folder, Consts.g_config_file );
+
+            using (FileStream t_filestream = new FileStream( t_filepath, FileMode.Create, FileAccess.Write, FileShare.None ))
             {
                 XmlSerializer ser = new XmlSerializer(typeof(ConfigInfo));
                 ser.Serialize(t_filestream, i_configinfo);
                 ser = null;
             }
+            System.IO.Directory.SetCurrentDirectory( t_path );
         }
 
         public static ConfigInfo Load()
         {
             ConfigInfo t_temp = new ConfigInfo();
-            if (File.Exists(Consts.c_config_file))
+            if (File.Exists(Consts.g_config_file))
             {
-                using (FileStream t_filestream = new FileStream(Consts.c_config_file, FileMode.Open, FileAccess.Read, FileShare.None))
+                using (FileStream t_filestream = new FileStream(Consts.g_config_file, FileMode.Open, FileAccess.Read, FileShare.None))
                 {
                     XmlSerializer ser = new XmlSerializer(typeof(ConfigInfo));
                     t_temp = ser.Deserialize(t_filestream) as ConfigInfo;

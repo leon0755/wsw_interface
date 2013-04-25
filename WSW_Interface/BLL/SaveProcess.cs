@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading;
+using System.IO;
 using Palgain.CommonModule;
 
 namespace Palgain.BLL
@@ -30,12 +31,18 @@ namespace Palgain.BLL
         private WSWDataBaseProcess m_db_process = new WSWDataBaseProcess( );
         private static object g_lockobj = new object( );
 
+        private string m_tempresult_path = "TempResult";
+
         private SaveProcess ( )
         {
-            //创建入库队残线程
-
+            //创建入库队列线程
+            Thread t_thread = new Thread( new ThreadStart( Process ) );
+            t_thread.IsBackground = true;
+            t_thread.Start( );
             //创建读取失败文件线程
-
+            Thread t_thread2 = new Thread( new ThreadStart( LoadTempFile ) );
+            t_thread2.IsBackground = true;
+            t_thread2.Start( );
         }
 
         /// <summary>
@@ -58,6 +65,10 @@ namespace Palgain.BLL
             }
         }
 
+        #region 入库线程
+        /// <summary>
+        /// 入库
+        /// </summary>
         private void Process ( )
         {
             while (true)
@@ -76,5 +87,24 @@ namespace Palgain.BLL
                 Thread.Sleep( 1000 );
             }
         }
+        #endregion
+
+        #region 读取结果文件线程
+        /// <summary>
+        /// 读取未成功入库的文件
+        /// </summary>
+        private void LoadTempFile ( )
+        {
+            while (true)
+            {
+                string t_resultfolder = Path.Combine( Consts.g_exe_folder, m_tempresult_path );
+                if (Directory.Exists( t_resultfolder ) == false)
+                {
+                    continue;
+                }
+                Thread.Sleep( 1000 );
+            }
+        }
+        #endregion
     }
 }
