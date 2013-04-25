@@ -28,7 +28,6 @@ namespace Palgain.BLL
         #endregion
 
         private Queue<WSWSampleResultInfo> m_data_queue = new Queue<WSWSampleResultInfo>( );
-        private WSWDataBaseProcess m_db_process = new WSWDataBaseProcess( );
         private static object g_lockobj = new object( );
 
         private string m_tempresult_path = "TempResult";
@@ -81,7 +80,9 @@ namespace Palgain.BLL
 
                 if (t_sampleresultinfo != null)
                 {
-                    m_db_process.SaveToDB( t_sampleresultinfo );
+                    WSWDataBaseProcess t_db_process = new WSWDataBaseProcess( );
+                    t_db_process.SaveToDB( t_sampleresultinfo );
+
                 }
 
                 Thread.Sleep( 1000 );
