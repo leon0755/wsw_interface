@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Palgain.CommonModule
 {
+    [Serializable]
     public class SampleInfo
     {
         private DateTime m_sampledate = new DateTime(1900, 1, 1);

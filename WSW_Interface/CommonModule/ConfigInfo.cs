@@ -84,6 +84,7 @@ namespace Palgain.CommonModule
 
         #endregion
 
+        #region .net环境配置
         private string m_testgroup = "";
 
         public string TestGroup
@@ -107,6 +108,17 @@ namespace Palgain.CommonModule
             get { return m_operator; }
             set { m_operator = value; }
         }
+        #endregion
+
+        #region 数据库连接字符串
+        private string m_connectstring = "";
+
+        public string ConnectString
+        {
+            get { return m_connectstring; }
+            set { m_connectstring = value; }
+        }
+        #endregion
 
         #region 序列化与反序列化
         public static void Save(ConfigInfo i_configinfo)

@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Palgain.CommonModule
 {
+    [Serializable]
     public class SampleResult
     {
         private string m_itemcode = "";
@@ -26,6 +27,14 @@ namespace Palgain.CommonModule
         {
             get { return m_itemname; }
             set { m_itemname = value; }
+        }
+
+        private string m_addresult = "";
+
+        public string AddResult
+        {
+            get { return m_addresult; }
+            set { m_addresult = value; }
         }
     }
 }

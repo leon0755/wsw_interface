@@ -4,11 +4,11 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.50727</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{C4DE4370-5A01-4DEF-9A00-4D52F76870AF}</ProjectGuid>
+    <ProjectGuid>{D86451B2-F2D1-41BB-940B-B6D2F98A6567}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Palgain.MainProgram</RootNamespace>
-    <AssemblyName>MainProgram</AssemblyName>
+    <RootNamespace>Palgain.BLL</RootNamespace>
+    <AssemblyName>BLL</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -34,25 +34,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Deocde\DecodeWSW.cs" />
-    <Compile Include="RS232Controller\EventArgs_Data.cs" />
-    <Compile Include="Enum_State.cs" />
-    <Compile Include="MainProgram.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RS232Controller\RS232Controller.cs" />
+    <Compile Include="SaveProcess.cs" />
+    <Compile Include="WSWDataBaseProcess.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BLL\BLL.csproj">
-      <Project>{D86451B2-F2D1-41BB-940B-B6D2F98A6567}</Project>
-      <Name>BLL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\CommonModule\CommonModule.csproj">
       <Project>{6BEB6289-A7ED-46A7-A742-E680E6C1BC08}</Project>
       <Name>CommonModule</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\COM_Function\RS232_Component.csproj">
-      <Project>{26B96CCB-6675-451C-99A7-DF565A8DB497}</Project>
-      <Name>RS232_Component</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />

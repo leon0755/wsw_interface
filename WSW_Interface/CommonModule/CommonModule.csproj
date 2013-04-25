@@ -38,6 +38,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DBHelper\SQLHelper.cs" />
     <Compile Include="SampleResultInfo\AntiResult.cs" />
     <Compile Include="SampleResultInfo\BactResult.cs" />
     <Compile Include="ConfigInfo.cs" />

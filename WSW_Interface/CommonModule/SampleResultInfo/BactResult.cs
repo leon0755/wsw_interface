@@ -4,6 +4,7 @@ using System.Text;
 
 namespace Palgain.CommonModule
 {
+    [Serializable]
     public class BactResult:SampleResult
     {
         private string m_isolate_number = "";

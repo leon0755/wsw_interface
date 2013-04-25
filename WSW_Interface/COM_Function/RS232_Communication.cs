@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Text;
 using System.IO.Ports;
 using System.IO;
-using Palgain.CommonModule;
 
 namespace Palgain.RS232_Component
 {
@@ -169,7 +168,7 @@ namespace Palgain.RS232_Component
         #region 串口出现收发故障
         void m_com_ErrorReceived(object sender, SerialErrorReceivedEventArgs e)
         {
-            LogHelper.Error("串口出现收发故障:" + e.EventType.ToString());
+            throw new Exception( e.EventType.ToString( ) );
         }
         #endregion
 
@@ -180,16 +179,15 @@ namespace Palgain.RS232_Component
             {
                 byte[] t_readbuffer = new byte[m_com.BytesToRead];
 
-                m_com.Read(t_readbuffer, 0, t_readbuffer.Length);
+                m_com.Read( t_readbuffer, 0, t_readbuffer.Length );
 
-                m_com.DiscardInBuffer();
+                m_com.DiscardInBuffer( );
 
-                OnDataReceived(t_readbuffer);
+                OnDataReceived( t_readbuffer );
             }
-            catch (Exception ex)
+            catch
             {
-                LogHelper.Error("COM口接收数据时出错" + ex.Message + ex.StackTrace);
-                throw ex;
+                throw;
             }
         }
         #endregion
@@ -208,10 +206,9 @@ namespace Palgain.RS232_Component
                 m_com.Write(t_bytearray, 0, t_bytearray.Length);
                 OnDataSend(t_bytearray);
             }
-            catch (Exception ex)
+            catch
             {
-                LogHelper.Error("串口发送数据出现异常:" + ex.ToString());
-                throw ex;
+                throw;
             }
         }
         #endregion
@@ -252,10 +249,9 @@ namespace Palgain.RS232_Component
 
                 m_com.Open();
             }
-            catch (Exception ex)
+            catch
             {
-                LogHelper.Error("RSR232启动失败" + ex.ToString());
-                throw ex;
+                throw;
             }
         }
 
@@ -264,17 +260,9 @@ namespace Palgain.RS232_Component
         /// </summary>
         public void Stop()
         {
-            try
-            {
-                this.m_com.DataReceived -= new SerialDataReceivedEventHandler(m_com_DataReceived);
-                this.m_com.ErrorReceived -= new SerialErrorReceivedEventHandler(m_com_ErrorReceived);
-                m_com.Close();
-            }
-            catch (Exception ex)
-            {
-                LogHelper.Error("RSR232关闭失败" + ex.ToString());
-                throw ex;
-            }
+            this.m_com.DataReceived -= new SerialDataReceivedEventHandler( m_com_DataReceived );
+            this.m_com.ErrorReceived -= new SerialErrorReceivedEventHandler( m_com_ErrorReceived );
+            m_com.Close( );
         }
 
         /// <summary>
@@ -327,20 +315,17 @@ namespace Palgain.RS232_Component
 
         public void Dispose()
         {
-            try
+            if (m_com != null)
             {
                 if (m_com.IsOpen)
                 {
-                    m_com.Close();
+                    m_com.Close( );
                 }
-                this.m_com.DataReceived -= new SerialDataReceivedEventHandler(m_com_DataReceived);
-                this.m_com.ErrorReceived -= new SerialErrorReceivedEventHandler(m_com_ErrorReceived);
+                this.m_com.DataReceived -= new SerialDataReceivedEventHandler( m_com_DataReceived );
+                this.m_com.ErrorReceived -= new SerialErrorReceivedEventHandler( m_com_ErrorReceived );
                 m_com = null;
             }
-            catch (Exception ex)
-            {
-                LogHelper.Error("Error:" + ex.ToString());
-            }
+            
         }
 
         #endregion

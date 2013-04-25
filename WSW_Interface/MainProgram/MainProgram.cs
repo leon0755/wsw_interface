@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading;
 using Palgain.CommonModule;
+using Palgain.BLL;
 
 namespace Palgain.MainProgram
 {
@@ -10,7 +11,7 @@ namespace Palgain.MainProgram
     {
         private RS232Controller m_rs232 = null;
         private Enum_State m_state = Enum_State.Ready;
-        private DecodeWSW m_decode = new DecodeWSW();
+        private DecodeWSW m_decode = new DecodeWSW(); 
 
         public Enum_State State 
         {
@@ -21,6 +22,7 @@ namespace Palgain.MainProgram
         public MainProgram()
         {
             Consts.Config = this.LoadConfig();
+            SaveProcess.Instance.Start( );
         }
 
         public void StartListenCOM()
@@ -48,16 +50,18 @@ namespace Palgain.MainProgram
 
         void m_rs232_Event_SendData(object sender, EventArgs_Data e)
         {
-            
+
         }
 
+        #region 接收到串口数据
         void m_rs232_Event_ReceiveData(object sender, EventArgs_Data e)
         {
             m_state = Enum_State.Decode;
 
             try
             {
-                m_decode.Decode(e.Data);
+                WSWSampleResultInfo t_resultinfo = m_decode.Decode( e.Data );
+                SaveProcess.Instance.AddResultInfo( t_resultinfo );
             }
             catch (Exception ex)
             {
@@ -65,6 +69,7 @@ namespace Palgain.MainProgram
             }
             m_state = Enum_State.Ready;
         }
+        #endregion
 
         ~MainProgram()
         {
@@ -73,14 +78,21 @@ namespace Palgain.MainProgram
 
         public void ExitProgram()
         {
-            if (m_rs232 != null)
+            try
             {
-                m_rs232.Event_ReceiveData -= new EventHandler<EventArgs_Data>(m_rs232_Event_ReceiveData);
-                m_rs232.Event_SendData -= new EventHandler<EventArgs_Data>(m_rs232_Event_SendData);
+                if (m_rs232 != null)
+                {
+                    m_rs232.Event_ReceiveData -= new EventHandler<EventArgs_Data>( m_rs232_Event_ReceiveData );
+                    m_rs232.Event_SendData -= new EventHandler<EventArgs_Data>( m_rs232_Event_SendData );
 
-                m_rs232.CloseCOM();
-                m_rs232.Dispose();
-                m_rs232 = null;
+                    m_rs232.CloseCOM( );
+                    m_rs232.Dispose( );
+                    m_rs232 = null;
+                }
+            }
+            catch (Exception ex)
+            {
+                LogHelper.Error( ex.ToString( ) );
             }
         }
 

@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <RS232>
-    <PortName>COM1</PortName>
+    <PortName>COM5</PortName>
     <BaudRate>9600</BaudRate>
     <Databits>8</Databits>
     <Stopbits>One</Stopbits>

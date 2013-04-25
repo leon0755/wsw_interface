@@ -18,6 +18,7 @@ namespace WSW_Interface
         Icon m_icon_ready = new Icon(".\\ICO\\running.ico");
         Icon m_icon_receive = new Icon(".\\ICO\\receive.ico");
         Icon m_icon_error = new Icon(".\\ICO\\closed.ico");
+        Icon m_icon_decode = new Icon( ".\\ICO\\decode.ico" );
 
         MainProgram m_program =new MainProgram();
         protected ContextMenu m_menu = new ContextMenu();
@@ -146,25 +147,36 @@ namespace WSW_Interface
         {
             while (true)
             {
-                this.BeginInvoke(new Action<Enum_State>(SetIcon), m_program.State);
+                this.BeginInvoke(new Action<Enum_State>(SetCommState), m_program.State);
                 Thread.Sleep(100);
             }
         }
 
-        private void SetIcon(Enum_State i_state)
+        private void SetCommState(Enum_State i_state)
         {
+            string t_message = "";
+            this.toolStripStatusLabel1.ForeColor = Color.Black;
             switch (i_state)
             {
+                case Enum_State.Decode:
+                    this.notifyIcon1.Icon = m_icon_decode;
+                    t_message = "正在接收与解码数据...";
+                    break;
                 case Enum_State.Receive:
                     this.notifyIcon1.Icon = m_icon_receive;
+                    t_message = "正在接收与解码数据...";
                     break;
                 case Enum_State.Error:
                     this.notifyIcon1.Icon = m_icon_error;
+                    t_message = "串口处于关闭状态";
+                    this.toolStripStatusLabel1.ForeColor = Color.Red;
                     break;
                 default:
                     this.notifyIcon1.Icon = m_icon_ready;
+                    t_message = "串口通讯正常";
                     break;
             }
+            this.toolStripStatusLabel1.Text = t_message;
         }
 
         private void btn_save_Click(object sender, EventArgs e)
@@ -194,8 +206,8 @@ namespace WSW_Interface
                 return;
             }
             m_program.SaveConfig(t_configinfo);
+            MessageBox.Show( "保存成功!开始应用设置" );
             this.LoadConfig();
-            MessageBox.Show("保存成功!");
         }
 
         private void frmManager_FormClosed(object sender, FormClosedEventArgs e)

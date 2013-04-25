@@ -4,7 +4,8 @@ using System.Text;
 
 namespace Palgain.CommonModule
 {
-    public class SampleResultInfo
+    [Serializable]
+    public class WSWSampleResultInfo
     {
         private SampleInfo m_sampleinfo = new SampleInfo();
 

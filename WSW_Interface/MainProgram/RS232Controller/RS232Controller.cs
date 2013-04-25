@@ -64,26 +64,28 @@ namespace Palgain.MainProgram
         #region 串口控制
         public void OpenCOM()
         {
+            LogHelper.Info( "准备打开串口:" + m_com.PortName );
             if (m_com.IsRunning == false)
             {
-                m_com.Start();
+                m_com.Start( );
             }
-            LogHelper.Info("串口已经开始监听");
+            LogHelper.Info( m_com.PortName + "串口已经开始监听" );
         }
 
         public void CloseCOM()
         {
+            LogHelper.Info( "准备关闭串口:" + m_com.PortName );
             if (m_com.IsRunning)
             {
                 m_com.Stop();
             }
-            LogHelper.Info("串口关闭监听");
+            LogHelper.Info( m_com.PortName + "串口关闭监听" );
         }
 
         public void RestartCOM()
         {
             m_com.Restart();
-            LogHelper.Info("串口重启完成");
+            LogHelper.Info( m_com.PortName + "串口重启完成" );
         }
         #endregion
 
