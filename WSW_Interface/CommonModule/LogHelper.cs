@@ -19,10 +19,10 @@ namespace Palgain.CommonModule
         public static void Info(string i_data)
         {
             g_log.Info(i_data);
-        }
+        } 
 
         public static void Info(LogType i_logtype, string i_data)
-        { 
+        {  
             Logger t_log = null;
             switch (i_logtype)
             {
