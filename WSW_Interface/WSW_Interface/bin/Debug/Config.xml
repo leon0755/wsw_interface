@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <ConfigInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <RS232>
-    <PortName>COM5</PortName>
+    <PortName>COM3</PortName>
     <BaudRate>9600</BaudRate>
     <Databits>8</Databits>
     <Stopbits>One</Stopbits>
@@ -12,4 +12,5 @@
   <TestGroup>WSW</TestGroup>
   <InstrumentNo>79</InstrumentNo>
   <Operator>admin</Operator>
+  <ConnectString>Data Source = 127.0.0.1; Initial Catalog = labomandotnet_nanjing; User Id = sa; Password = test;</ConnectString>
 </ConfigInfo>

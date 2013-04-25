@@ -73,6 +73,11 @@ namespace Palgain.BLL
             while (true)
             {
                 WSWSampleResultInfo t_sampleresultinfo = null;
+                if (m_data_queue.Count == 0)
+                {
+                    Thread.Sleep(1000);
+                    continue;
+                }
                 lock (g_lockobj)
                 {
                     t_sampleresultinfo = m_data_queue.Dequeue( );
