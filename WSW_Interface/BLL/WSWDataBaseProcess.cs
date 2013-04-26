@@ -16,7 +16,7 @@ namespace Palgain.BLL
             TB_TODAY_TEST_INFO,
             TB_TODAY_TEST_STATUS,
             TB_BIO_SAMPLE_RESULT,
-            TB_BIO_BACT_RESULT,
+            TB_BIO_BACT_RESULT, 
             TB_BIO_ANTIBIOTICS_RESULT,
         }
 
@@ -33,6 +33,10 @@ namespace Palgain.BLL
                         i_resultinfo.SampleInfo.SampleNo,
                         Consts.Config.TestGroup
                         ));
+
+                    #region 对相关字典信息进行查询
+
+                    #endregion
 
                     #region TB_TODAY_TEST_INFO
 
@@ -66,6 +70,7 @@ namespace Palgain.BLL
                     #endregion
 
                     LogHelper.Info("入库成功!");
+                    t_result = true;
                 }
                 catch (Exception ex)
                 {
@@ -202,28 +207,10 @@ namespace Palgain.BLL
             StringBuilder t_sb = new StringBuilder();
             switch (i_table)
             {
-                #region TB_TODAY_TEST_INFO
-                case Enum_Tables.TB_TODAY_TEST_INFO:
-                    t_sb.AppendFormat("update TB_TODAY_TEST_INFO ");
-                    t_sb.AppendFormat("(SAMPLE_CODE,SAMPLE_ID,TEST_DATE,TEST_GROUP,VALID_FLG,PATIENT_ID) ");
-                    t_sb.AppendFormat("values ('{0}','{1}',", 1, i_sampleresultinfo.SampleInfo.SampleNo);
-                    t_sb.AppendFormat("'{0}',", i_sampleresultinfo.SampleInfo.SampleDate.ToString("yyyy-MM-dd"));
-                    t_sb.AppendFormat("'{0}',", Consts.Config.TestGroup);
-                    t_sb.AppendFormat("'{0}',", 0);
-                    t_sb.AppendFormat("'{0}')", i_sampleresultinfo.SampleInfo.PatientID);
-                    break;
-                #endregion
-
-                #region TB_TODAY_TEST_STATUS
-                case Enum_Tables.TB_TODAY_TEST_STATUS:
-                    t_sb.AppendFormat("insert into TB_TODAY_TEST_STATUS ");
-                    t_sb.AppendFormat("(SAMPLE_CODE,SAMPLE_ID,TEST_DATE,TEST_GROUP,VALID_FLG,TEST_FLG,TEST_TIME) ");
-                    t_sb.AppendFormat("values ('{0}','{1}',", 1, i_sampleresultinfo.SampleInfo.SampleNo);
-                    t_sb.AppendFormat("'{0}',", i_sampleresultinfo.SampleInfo.SampleDate.ToString("yyyy-MM-dd"));
-                    t_sb.AppendFormat("'{0}',", Consts.Config.TestGroup);
-                    t_sb.AppendFormat("'{0}',", 0);
-                    t_sb.AppendFormat("'{0}',", 1);
-                    t_sb.AppendFormat("'{0}')", DateTime.Today.ToString("yyyy-MM-dd HH:mm:ss"));
+                #region TB_BIO_BACT_RESULT
+                case Enum_Tables.TB_BIO_BACT_RESULT:
+                    t_sb.AppendFormat( "update TB_BIO_BACT_RESULT " );
+                    t_sb.AppendFormat( "set " );
                     break;
                 #endregion
             }
@@ -231,5 +218,21 @@ namespace Palgain.BLL
         }
         #endregion
 
+        #region 查询对应字典信息
+        /// <summary>
+        /// 查询对应字典信息
+        /// </summary>
+        /// <param name="i_id"></param>
+        /// <returns></returns>
+        private string GetValue ( string i_id )
+        {
+            string t_value = "";
+            StringBuilder t_sb = new StringBuilder( );
+
+
+
+            return t_value;
+        }
+        #endregion
     }
 }

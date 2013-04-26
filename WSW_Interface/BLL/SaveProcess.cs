@@ -39,9 +39,9 @@ namespace Palgain.BLL
             t_thread.IsBackground = true;
             t_thread.Start( );
             //创建读取失败文件线程
-            Thread t_thread2 = new Thread( new ThreadStart( LoadTempFile ) );
-            t_thread2.IsBackground = true;
-            t_thread2.Start( );
+            //Thread t_thread2 = new Thread( new ThreadStart( LoadTempFile ) );
+            //t_thread2.IsBackground = true;
+            //t_thread2.Start( );
         }
 
         /// <summary>
@@ -73,20 +73,18 @@ namespace Palgain.BLL
             while (true)
             {
                 WSWSampleResultInfo t_sampleresultinfo = null;
-                if (m_data_queue.Count == 0)
-                {
-                    Thread.Sleep(1000);
-                    continue;
-                }
                 lock (g_lockobj)
                 {
-                    t_sampleresultinfo = m_data_queue.Dequeue( );
+                    if (m_data_queue.Count > 0)
+                    {
+                        t_sampleresultinfo = m_data_queue.Dequeue( );
+                    }
                 }
 
                 if (t_sampleresultinfo != null)
                 {
                     WSWDataBaseProcess t_db_process = new WSWDataBaseProcess( );
-                    t_db_process.SaveToDB( t_sampleresultinfo );
+                    bool t_is_ok = t_db_process.SaveToDB( t_sampleresultinfo );
 
                 }
 
